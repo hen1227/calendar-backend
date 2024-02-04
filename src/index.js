@@ -5,7 +5,6 @@ import cors from 'cors';
 import { createServer} from 'http';
 import authRoutes from './auth/Routes.js';
 import calendarRoutes from './calendar/Routes.js';
-import { Server } from 'socket.io'
 
 import sequelize from "./models/Sequelize.js";
 
