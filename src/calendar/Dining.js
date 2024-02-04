@@ -114,11 +114,11 @@ function delay(time) {
     });
 }
 
-if(process.env.PRODUCTION_ENVIRONMENT) {
-    scrapeAllMenus().then(() => {
-        console.log('Updated all menus!');
-    });
-}
+// if(process.env.PRODUCTION_ENVIRONMENT) {
+//     scrapeAllMenus().then(() => {
+//         console.log('Updated all menus!');
+//     });
+// }
 
 const getMenu = (mealType) => {
     // TODO: Research if there is a better way to do this.
