@@ -1,2 +1,5 @@
+/database/
+/downloads/
+/node_modules/
+.secrets
 .env
-.database/

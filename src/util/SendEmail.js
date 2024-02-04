@@ -34,7 +34,7 @@ export const sendEmail = async (to, subject, body, isHTML = false) => {
         transporter.sendMail(mailOptions, (error, info) => {
             if (error) {
                 console.error('Error sending email:', error);
-                throw error;
+                // throw error;
             } else {
                 console.log('Email sent:', info.response);
                 return info.response;
@@ -42,6 +42,5 @@ export const sendEmail = async (to, subject, body, isHTML = false) => {
         });
     } catch (error) {
         console.error('Error in sendEmail:', error);
-        throw error;
     }
 }

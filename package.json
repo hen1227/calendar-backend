@@ -1,12 +1,48 @@
 {
   "name": "calendar-backend",
   "version": "1.0.0",
-  "description": "",
+  "description": "The backend server of SPS Now Calendar System",
   "main": "src/index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon start",
+    "start": "node src/index.js",
+    "deploy": "npm install & node src/index.js",
+    "deployForever": "forever --watch --watchIgnore ./database/ ./src/index.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hen1227/calendar-backend.git"
+  },
+  "author": "Henry Abrahamsen <Henry@henhen1227.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hen1227/calendar-backend/issues"
+  },
+  "homepage": "https://github.com/hen1227/calendar-backend#readme",
+  "dependencies": {
+    "apn": "^2.2.0",
+    "axios": "^1.4.0",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.2",
+    "cheerio": "^1.0.0-rc.12",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "easy-json-database": "^1.5.0",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.10.1",
+    "fs": "^0.0.1-security",
+    "jsonwebtoken": "^9.0.1",
+    "node-cron": "^3.0.2",
+    "nodemailer": "^6.9.4",
+    "nodemon": "^2.0.20",
+    "pg": "^8.11.3",
+    "pg-hstore": "^2.3.4",
+    "puppeteer": "^21.3.8",
+    "python-shell": "^3.0.1",
+    "sequelize": "^6.32.1",
+    "sqlite3": "^5.1.6",
+    "v": "^0.3.0",
+    "web-push": "^3.6.6"
+  }
 }
